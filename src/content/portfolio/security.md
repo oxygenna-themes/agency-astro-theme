@@ -1,0 +1,22 @@
+---
+title: 'Security Enhancements now here!'
+subtitle: 'Astro Template'
+description: 'The Agency mobile app is now available! Manage your tasks and projects on the go with our new mobile app. Stay connected and productive no matter where you are.'
+coverImage: '/blog/post-03-cover.png'
+previewLink: 'https://foxi-pro.netlify.app'
+buyLink: 'https://foxi-pro.netlify.app'
+---
+
+The Agency mobile app is now available! Manage your tasks and projects on the go with our new mobile app. Stay connected and productive no matter where you are.
+
+![Agency is here.](/blog/post-03.png)
+
+We have rolled out new security updates to keep your data safe and secure. Learn more about our latest security enhancements and how they protect you.
+
+### Security Enhancements
+
+- **Two-Factor Authentication**: Add an extra layer of security to your account with two-factor authentication. This feature requires you to verify your identity using a second device or method.
+- **Data Encryption**: All data transmitted and stored within Agency is now encrypted using industry-standard encryption protocols. Your information is protected from unauthorized access.
+- **Regular Security Audits**: We conduct regular security audits to identify and address potential vulnerabilities. Our commitment to security ensures that your data remains safe.
+
+Your security is our top priority. Thank you for trusting Agency with your valuable data.

@@ -20,7 +20,8 @@ export default {
     },
     // Font weights
     {
-      pattern: /font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)/,
+      pattern:
+        /font-(thin|extralight|light|normal|medium|semibold|bold|extrabold|black)/,
     },
     // Alignments
     {
@@ -32,17 +33,17 @@ export default {
       colors: {
         transparent: "transparent",
         primary: {
-          50: "#fdf2f8",
-          100: "#fce7f3",
-          200: "#fbcfe8",
-          300: "#f9a8d4",
-          400: "#f472b6",
-          500: "#E2187D",
-          600: "#db2777",
-          700: "#be185d",
-          800: "#9d174d",
-          900: "#831843",
-          950: "#500724",
+          50: "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#2563eb",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
+          950: "#172554",
         },
         neutral: {
           50: "#f8fafc",
@@ -71,10 +72,16 @@ export default {
           "100%": { transform: "translateY(0)", opacity: 1 },
         },
         fadeInShadowLight: {
-          "100%": { boxShadow: "0 20px 25px -5px rgba(15, 23, 42, .025), 0 8px 10px -6px rgba(15, 23, 42, .025);" },
+          "100%": {
+            boxShadow:
+              "0 20px 25px -5px rgba(15, 23, 42, .025), 0 8px 10px -6px rgba(15, 23, 42, .025);",
+          },
         },
         fadeInShadowDark: {
-          "100%": { boxShadow: "0 20px 25px -5px rgba(2, 6, 23, .25), 0 8px 10px -6px rgba(2, 6, 23, .25);" },
+          "100%": {
+            boxShadow:
+              "0 20px 25px -5px rgba(2, 6, 23, .25), 0 8px 10px -6px rgba(2, 6, 23, .25);",
+          },
         },
       },
       animation: {

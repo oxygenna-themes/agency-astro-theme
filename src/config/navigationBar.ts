@@ -35,11 +35,11 @@ export const navigationBarData: NavData = {
 	logo: {
 		src: '/logo.svg',
 		alt: 'The tailwind astro theme',
-		text: 'Foxi.'
+		text: 'Agency.'
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Portfolio', link: '/blog' }
+		{ name: 'Portfolio', link: '/portfolio' }
 	],
 	navActions: [{ name: 'Contact us', link: '/', style: 'primary', size: 'lg' }]
 }

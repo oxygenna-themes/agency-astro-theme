@@ -1,0 +1,40 @@
+---
+// Portfolio Posts grid Section
+// ------------
+// Description: A grid of portfolio posts sorted by date in a 3 column layout.
+// Properties:
+// - data: An array of portfolio posts
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Post from '../../ui/cards/PortfolioCard.astro'
+
+// Props
+type Props = {
+	data: any
+}
+const { data: allPosts } = Astro.props
+---
+
+<Section>
+	<Row>
+		{
+			allPosts.map((post: any) => (
+				<Col span="4">
+					<Post
+						link={`/portfolio/${post.slug}`}
+						title={post.data.title}
+						subtitle={post.data.subtitle}
+						image={post.data.coverImage}
+					>
+						{post.data.description}
+					</Post>
+				</Col>
+			))
+		}
+	</Row>
+</Section>

@@ -1,15 +1,15 @@
 ---
-// Blog Card
+// Portfolio Card
 // ------------
-// Description: The blog card component
+// Description: The portfolio card component
 // Properties:
 // - Title: the title of the card
 // - Subtitle: the subtitle of the card
 // - Image: the main image of the card
 // - Icon: the icon of the card
-// - Link: The link to the blog post
+// - Link: The link to the portfolio post
 // - classes: extra classes
-// - Tags: the tags of the blog post
+// - Tags: the tags of the portfolio post
 // Reference: https://wind-ui.com/components/cards/
 
 // Components
@@ -17,7 +17,6 @@
 import { Image } from 'astro:assets'
 import Card from './partials/Card.astro'
 import CardBody from './partials/CardBody.astro'
-import Badge from '../Badge.astro'
 
 // Props
 type Props = {
@@ -30,11 +29,10 @@ type Props = {
 }
 const {
 	title = '',
-	subtitle,
+	subtitle = '',
 	image,
 	link,
-	classes = '!shadow-none border border-neutral-100 dark:border-neutral-800',
-	tags
+	classes = '!shadow-none border border-neutral-100 dark:border-neutral-800'
 } = Astro.props
 ---
 
@@ -47,16 +45,6 @@ const {
 		<h4 class="post-subtitle">{subtitle}</h4>
 		<slot />
 	</CardBody>
-
-	{
-		tags && (
-			<div class="post-tags">
-				{tags.map((tag: string) => (
-					<Badge name={tag} link={`/blog/tags/` + tag} classes="capitalize" />
-				))}
-			</div>
-		)
-	}
 </Card>
 
 <style>

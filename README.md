@@ -1,4 +1,4 @@
-# Foxi - Astro Theme
+# Agency - Astro Theme
 
 Open-source Astro website template with fully responsive, customizable TailwindCSS components.
 
@@ -11,7 +11,7 @@ Open-source Astro website template with fully responsive, customizable TailwindC
 
 ### About
 
-Foxi is a free, highly customizable, and production-ready template for Astro, utilizing Tailwind CSS components. Designed with developers in mind, Foxi offers a solid foundation for building modern, high-performance websites quickly and efficiently.
+Agency is a free, highly customizable, and production-ready template for Astro, utilizing Tailwind CSS components. Designed with developers in mind, Agency offers a solid foundation for building modern, high-performance websites quickly and efficiently.
 
 ![just-the-basics](https://oxygenna-themes.b-cdn.net/foxi-astro/pagespeedscore.svg)
 
@@ -50,7 +50,7 @@ After downloading the template, you'll need to install some dependencies. Once t
 
 ### Folder structure
 
-Inside Foxi Astro project, you'll see the following folders and files:
+Inside Agency Astro project, you'll see the following folders and files:
 
 ```plaintext
 /

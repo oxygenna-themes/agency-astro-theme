@@ -1,0 +1,80 @@
+---
+// Hero Section for Portfolio Posts
+// ------------
+// Description: A hero section (page header) for the post pages.
+// Properties:
+// - tags: An array of tags for the post
+// - title: The title of the section (usually the title of the post)
+// - author: The author of the post
+// - publishDate: The publish date of the post
+
+// Components
+// - Layout
+import Section from '../../ui/Section.astro'
+import Row from '../../ui/Row.astro'
+import Col from '../../ui/Col.astro'
+// - UI
+import Breadcrumbs from '../../ui/Breadcrumbs.astro'
+import { Image } from 'astro:assets'
+import Button from '../../ui/Button.astro'
+import { Icon } from 'astro-icon/components'
+
+// Props
+type Props = {
+	title: string
+	description: string
+	overheadText: string
+	image: string
+	previewLink: string
+	buyLink: string
+	classes?: string
+}
+const { title, description, overheadText, image, previewLink, buyLink, classes } = Astro.props
+---
+
+<Section id="post-intro" classes="bg-neutral-50 dark:bg-neutral-900">
+	<Row>
+		<Col span="6" classes="self-center">
+			<header class="post-header">
+				<!-- <Breadcrumbs classes="mb-6" /> -->
+				<span class="post-header__overhead">
+					{overheadText}
+				</span>
+				<h1 class="post-header__title">
+					{title}
+				</h1>
+				<p>
+					{description}
+				</p>
+				<div class="post-header__actions">
+					<Button style="primary" size="lg" link={previewLink}>
+						Live preview
+						<Icon name="long-arrow-right" />
+					</Button>
+					<Button style="primary" variation="outline" size="lg" link={buyLink}>Get template</Button>
+				</div>
+			</header>
+		</Col>
+		<Col span="6">
+			<img src={image} alt={title} class="rounded" />
+		</Col>
+	</Row>
+</Section>
+
+<style>
+	.page-header {
+		@apply mx-auto max-w-4xl;
+	}
+	.post-header__overhead {
+		@apply block pb-2 font-medium;
+	}
+	.post-header__title {
+		@apply text-5xl;
+	}
+	.page-header__text {
+		@apply text-lg leading-relaxed;
+	}
+	.post-header__actions {
+		@apply mt-6 flex flex-col gap-2 pb-2 md:flex-row;
+	}
+</style>

@@ -1,17 +1,17 @@
 ---
-// Portfolio Post Page
+// Blog Post Page
 // ------------
-// Description: The portfolio post page.
+// Description: The blog post page.
 
 // Components
 // - Layout
-import Layout from '../../layouts/PortfolioPostLayout.astro'
+import Layout from '../../layouts/PostLayout.astro'
 
 // Data
 import { getCollection } from 'astro:content'
 export async function getStaticPaths() {
-	const portfolioEntries = await getCollection('portfolio')
-	return portfolioEntries.map((entry) => ({
+	const blogEntries = await getCollection('blog')
+	return blogEntries.map((entry) => ({
 		params: { slug: entry.slug },
 		props: { entry }
 	}))

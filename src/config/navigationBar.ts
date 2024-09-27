@@ -39,7 +39,8 @@ export const navigationBarData: NavData = {
 	},
 	navItems: [
 		{ name: 'Home', link: '/' },
-		{ name: 'Portfolio', link: '/portfolio' }
+		{ name: 'Portfolio', link: '/portfolio' },
+		{ name: 'Blog', link: '/blog' }
 	],
 	navActions: [{ name: 'Contact us', link: '/', style: 'primary', size: 'lg' }]
 }
